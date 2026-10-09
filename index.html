@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Overlap — World time by country</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='13' cy='16' r='7' fill='none' stroke='%2334d399' stroke-width='2.5'/%3E%3Ccircle cx='19' cy='16' r='7' fill='none' stroke='%23fbbf24' stroke-width='2.5'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <script>
     /* Apply saved theme before first paint to avoid a flash. */
     try { var t = localStorage.getItem('overlap.theme'); if (t === 'light') document.documentElement.classList.remove('dark'); } catch (e) {}
@@ -28,7 +30,7 @@
   <header class="sticky top-0 z-30 border-b border-zinc-200 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-[#09090b]/80">
     <div class="mx-auto flex h-14 max-w-3xl items-center justify-between px-4">
       <div class="flex items-center gap-2">
-        <svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke-width="2.5" aria-hidden="true"><circle cx="13" cy="16" r="7" stroke="#10b981"/><circle cx="19" cy="16" r="7" stroke="#f59e0b"/></svg>
+        <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true"><defs><clipPath id="lg"><circle cx="25" cy="32" r="16"/></clipPath></defs><circle cx="25" cy="32" r="16" fill="#10b981" fill-opacity=".22" stroke="#34d399" stroke-width="4"/><circle cx="39" cy="32" r="16" fill="#f59e0b" fill-opacity=".22" stroke="#fbbf24" stroke-width="4"/><circle cx="39" cy="32" r="16" fill="#fafaf9" clip-path="url(#lg)"/></svg>
         <span class="text-sm font-semibold tracking-tight">Overlap</span>
       </div>
       <button id="theme" type="button" aria-label="Switch to light mode"
